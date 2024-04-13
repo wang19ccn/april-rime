@@ -10,8 +10,8 @@ patch:
   # 快捷键
   key_binder:
     # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字），和中括号翻页有冲突
-    select_first_character: "bracketleft"  # 左中括号 [
-    select_last_character: "bracketright"  # 右中括号 ]
+    select_first_character: "minus"  # -
+    select_last_character: "equal"  # =
 
     bindings:
       # Tab / Shift+Tab 切换光标至下/上一个拼音
@@ -51,6 +51,8 @@ patch:
       # - { when: always, toggle: full_shape, accept: Control+Shift+percent }       # 切换全半角
 
       # emacs_editing:
+      - { when: composing, accept: Control+minus, send: Up }
+      - { when: composing, accept: Control+equal, send: Down }
       # - { when: composing, accept: Control+p, send: Up }
       # - { when: composing, accept: Control+n, send: Down }
       # - { when: composing, accept: Control+b, send: Left }
@@ -68,7 +70,7 @@ patch:
 
       # optimized_mode_switch:
       # - { when: always, accept: Control+Shift+space, select: .next }
-      # - { when: always, accept: Shift+space, toggle: ascii_mode }
+      - { when: always, accept: Shift+space, toggle: ascii_mode }
       # - { when: always, accept: Control+comma, toggle: full_shape }
       # - { when: always, accept: Control+period, toggle: ascii_punct }
       # - { when: always, accept: Control+slash, toggle: traditionalization }
