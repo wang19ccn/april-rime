@@ -84,7 +84,7 @@ patch:
       max_width: 0                           # 候选框最大宽度，horizontal 布局如宽超此尺寸则换行显示候选，设置为 0 不启用此功能
       min_height: 0                          # 候选框最小高度
       min_width: 10                          # 候选框最小宽度
-      border_width: 2                        # 边框宽度；又名 border
+      border_width: 1                        # 边框宽度；又名 border
       margin_x: 4                            # 主体元素和候选框的左右边距；为负值时，不显示候选框
       margin_y: 4                            # 主体元素的上下边距；为负值时，不显示候选框
       spacing: 13                            # inline_preedit 为否时，编码区域和候选区域的间距
@@ -93,7 +93,7 @@ patch:
       hilite_padding: 2                      # 高亮区域和内部文字的间距，影响高亮区域大小
       # hilite_padding_x: 8                  # 高亮区域和内部文字的左右间距，如无特殊指定则依 hiliwe_padding 设置
       # hilite_padding_y: 8                  # 高亮区域和内部文字的上下间距，如无特殊指定则依 hilite_padding 设置
-      shadow_radius: 2                       # 阴影区域半径，为 0 不显示阴影；需要同时在配色方案中指定非透明的阴影颜色
+      shadow_radius: 3                       # 阴影区域半径，为 0 不显示阴影；需要同时在配色方案中指定非透明的阴影颜色
       shadow_offset_x: 1                     # 阴影左右偏移距离
       shadow_offset_y: 1                     # 阴影上下偏移距离
       corner_radius: 2                       # 候选窗口圆角半径
@@ -107,7 +107,7 @@ patch:
   # 在小狼毫用户目录新建 preview 文件夹，将自定义皮肤的截图重命名为 color_scheme_<name>.png 放入此文件夹，可以在「输入法设定」中看到自定义皮肤效果
 
   # 小狼毫配色在线设计：
-  # [RIME 西米](https://fxliang.github.io/RimeSeeMe/)
+  # [RIME 西米](https://fxliang.github.io/RimeSeewe/)
   # [润笔](https://pdog18.github.io/rime-soak/#/theme)
 
   # [小狼毫配色详解](https://github.com/rime/weasel/wiki/定制小狼毫配色)
@@ -153,8 +153,8 @@ patch:
       text_color: 0x808080
       back_color: 0xFFFFFF
       label_color: 0x4D4D4D
-      border_color: 0xFAFAFA
-      shadow_color: 0xFAFAFA
+      border_color: 0xF5F5F5
+      shadow_color: 0xB5B5B5
       comment_text_color: 0x4D4D4D
       candidate_text_color: 0x000000
       hilited_text_color: 0xEEEEEE
